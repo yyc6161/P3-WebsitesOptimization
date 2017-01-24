@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>项目-网站优化</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style type="text/css">
+    	body{
+    		padding: 10px 30px;
+    		color: #fff;
+    		background-color: #333;
+    	}
+    	.description{
+    		font-size: 17px;
+    	}
+    	li{
+    		line-height: 40px;
+    	}
+    	a{
+    		color: #00bfff;
+    	}
+    </style>
+  </head>
+
+  <body>
+    <div class="intro text-center">
+      <h1>项目：网站优化</h1>
+    </div>
+    <div class="description">
+    	<br>
+    	<h4 class="intro"><strong>这个项目主要是对现有网站进行优化，将从以下三个方面来对网页进行优化：</strong></h4>
+    	<ol class="changes">
+    		<li>通过优化关键渲染路径，使index.html在谷歌的<a href="https://developers.google.com/speed/pagespeed/insights/?hl=zh-CN">PageSpeed</a>上分数达90分或以上。</li>
+    		<li>对目录中views/js/main.js进行的优化，使views/pizza.html在滚动时达到更流畅的帧速。</li>
+    		<li>使用户在使用views/pizza.html页面上pizza尺寸滑块调整pizza大小时，页面响应的时间小于5毫秒</li>
+    	</ol>
+    </div>
+    <br>
+    <div class="proj row">
+    	<section id="before" class="col-md-6">
+    		<h2>未优化网站</h2>
+    		<h3><a href="Before\index.html" target="_blank">Demo</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/yyc6161/yyc6161.github.io/tree/master/projects/P3-WebsitesOptimization/Before">源代码</a></h3>
+    		<ol>
+    			<li>
+    				<p style="margin-bottom: 0">移动设备得分：27<br>桌面设备得分：30</p>
+    				<a href="https://developers.google.com/speed/pagespeed/insights/?hl=zh-CN&url=http%3A%2F%2Fyinyuchen.site%2Fprojects%2FP3-WebsitesOptimization%2FBefore%2Findex.html&tab=mobile">查看分数详情</a>
+    			</li>
+    			<li>Pizza页面帧率：<br><img src="img/fps-before.JPG" alt="优化前帧率" class="img-responsive"></li>
+    			<li>更改pizza尺寸花费时间：<br><img src="img/time-before.JPG" alt="优化前用时" class="img-responsive"></li>
+    		</ol>
+    	</section>
+    	<section id="after" class="col-md-6">
+    		<h2>优化后网站</h2>
+    		<h3><a href="After\index.html" target="_blank">Demo</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/yyc6161/yyc6161.github.io/tree/master/projects/P3-WebsitesOptimization/After">源代码</a></h3>
+    		<ol>
+    			<li>
+    				<p style="margin-bottom: 0">移动设备得分：95<br>桌面设备得分：96</p>
+    				<a href="https://developers.google.com/speed/pagespeed/insights/?hl=zh-CN&url=http%3A%2F%2Fyinyuchen.site%2Fprojects%2FP3-WebsitesOptimization%2FAfter%2Findex.html&tab=mobile">查看分数详情</a>
+    			</li>
+    			<li>Pizza页面帧率：<br><img src="img/fps-after.JPG" alt="优化前帧率" class="img-responsive"></li>
+    			<li>更改pizza尺寸花费时间：<br><img src="img/time-after.JPG" alt="优化前用时" class="img-responsive"></li>
+    		</ol>
+    	</section>
+    </div>  
+  </body>
+</html>
